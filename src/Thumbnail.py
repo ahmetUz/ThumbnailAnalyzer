@@ -21,7 +21,8 @@ class Thumbnail:
 	def extract_planes(self):
 		pass
 
-from thumbnail_methods import fetch_thumbnail, get_depth_map, segment_planes, save_segmented_planes, extract_planes
+from thumbnail_methods.fetch_thumbnail import fetch_thumbnail
+from thumbnail_methods.extract_planes import extract_planes, get_depth_map, segment_planes, save_segmented_planes
 
 Thumbnail.fetch_thumbnail = fetch_thumbnail
 Thumbnail.get_depth_map = get_depth_map
